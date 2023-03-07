@@ -78,6 +78,14 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
+
+      {/* Earth 3D Model */}
+      <motion.div
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:[550px] h-[350px]"
+      >
+        <EarthCanvas />
+      </motion.div>
     </div>
   );
 };
