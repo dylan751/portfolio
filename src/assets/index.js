@@ -34,6 +34,10 @@ import callcenter from './callcenter.png';
 import travelpage from './travelpage.png';
 import nftmarketplace from './nftmarketplace.png';
 
+import hien from './hien.jpg';
+import long from './long.jpg';
+import quang from './quang.jpg';
+
 export {
   zuong,
   logo,
@@ -66,4 +70,7 @@ export {
   callcenter,
   travelpage,
   nftmarketplace,
+  hien,
+  long,
+  quang,
 };
