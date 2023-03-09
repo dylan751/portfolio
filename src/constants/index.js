@@ -287,7 +287,7 @@ const projects = [
   {
     name: 'Near NFT Marketplace',
     description:
-      'The Blockchain Game Crowdfunding Platform integrated with NFT Marketplace built on NEAR Protocol Blockchain using Rust SDK',
+      'The Blockchain Game Crowdfunding Platform integrated with NFT Marketplace built on NEAR Protocol Blockchain using Rust SDK and ReactJS',
     tags: [
       {
         name: 'near',

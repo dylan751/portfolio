@@ -2,7 +2,7 @@ import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { github } from '../assets';
+import { github, live } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -29,19 +30,6 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          {/* Github source code Links */}
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div>
         </div>
 
         {/* Name and description of the Projects */}
@@ -57,6 +45,28 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
+        </div>
+
+        <div className="flex flex-row gap-2">
+          {/* Project live Links */}
+          <div
+            onClick={() => window.open(live_link, '_blank')}
+            className="bg-tertiary mt-8 py-2 px-6 outline-none w-fit text-white hover:bg-secondary hover:text-tertiary shadow-sm shadow-secondary rounded-md cursor-pointer"
+          >
+            Live demo
+          </div>
+          {/* Github source code Links */}
+          <div
+            onClick={() => window.open(source_code_link, '_blank')}
+            className="bg-tertiary mt-8 py-2 px-6 outline-none w-fit text-white hover:bg-secondary hover:text-tertiary shadow-sm shadow-secondary rounded-md cursor-pointer flex items-center gap-2"
+          >
+            <img
+              src={github}
+              alt="github"
+              className="w-[24px] h-[24px] object-contain inline"
+            />
+            Code
+          </div>
         </div>
       </Tilt>
     </motion.div>
