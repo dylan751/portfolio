@@ -217,6 +217,8 @@ const projects = [
     image: bookingapp,
     source_code_link: 'https://github.com/muoi07052001/booking-app-front-end',
     live_link: 'https://booking-app-front-end.vercel.app/',
+    source_code_enable: true,
+    live_enable: true,
   },
   {
     name: 'Japanese Job IT',
@@ -239,6 +241,8 @@ const projects = [
     image: jobit,
     source_code_link: 'https://github.com/muoi07052001',
     live_link: 'https://jobufea.com',
+    source_code_enable: false,
+    live_enable: true,
   },
   {
     name: 'Travel Page',
@@ -261,6 +265,8 @@ const projects = [
     image: travelpage,
     source_code_link: 'https://github.com/muoi07052001/db-travel-page-project',
     live_link: 'https://db-travel-page-project.vercel.app/',
+    source_code_enable: true,
+    live_enable: false,
   },
   {
     name: 'Call Center',
@@ -282,7 +288,9 @@ const projects = [
     ],
     image: callcenter,
     source_code_link: 'https://github.com/muoi07052001/',
-    live_link: 'https://db-travel-page-project.vercel.app/',
+    live_link: 'https://ccp.ast-dev.ai-studio-work.net',
+    source_code_enable: false,
+    live_enable: false,
   },
   {
     name: 'Near NFT Marketplace',
@@ -305,6 +313,8 @@ const projects = [
     image: nftmarketplace,
     source_code_link: 'https://github.com/muoi07052001/nearhub-marketplace',
     live_link: 'https://testnet.nearhub.io/',
+    source_code_enable: true,
+    live_enable: false,
   },
 ];
 

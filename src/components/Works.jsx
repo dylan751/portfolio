@@ -15,6 +15,8 @@ const ProjectCard = ({
   image,
   source_code_link,
   live_link,
+  source_code_enable,
+  live_enable,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -29,7 +31,6 @@ const ProjectCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-
         </div>
 
         {/* Name and description of the Projects */}
@@ -50,15 +51,25 @@ const ProjectCard = ({
         <div className="flex flex-row gap-2">
           {/* Project live Links */}
           <div
-            onClick={() => window.open(live_link, '_blank')}
-            className="bg-tertiary mt-8 py-2 px-6 outline-none w-fit text-white hover:bg-secondary hover:text-tertiary shadow-sm shadow-secondary rounded-md cursor-pointer"
+            onClick={() => live_enable && window.open(live_link, '_blank')}
+            className={`mt-8 py-2 px-6 outline-none w-fit text-white shadow-sm shadow-secondary rounded-md ${
+              live_enable
+                ? 'cursor-pointer bg-tertiary hover:bg-secondary hover:text-tertiary '
+                : 'cursor-not-allowed bg-gray-400'
+            }`}
           >
             Live demo
           </div>
           {/* Github source code Links */}
           <div
-            onClick={() => window.open(source_code_link, '_blank')}
-            className="bg-tertiary mt-8 py-2 px-6 outline-none w-fit text-white hover:bg-secondary hover:text-tertiary shadow-sm shadow-secondary rounded-md cursor-pointer flex items-center gap-2"
+            onClick={() =>
+              source_code_enable && window.open(source_code_link, '_blank')
+            }
+            className={`mt-8 py-2 px-6 outline-none w-fit text-white shadow-sm shadow-secondary rounded-md flex items-center gap-2 ${
+              source_code_enable
+                ? 'cursor-pointer bg-tertiary hover:bg-secondary hover:text-tertiary'
+                : 'cursor-not-allowed bg-gray-400'
+            }`}
           >
             <img
               src={github}
