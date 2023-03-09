@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import { cv } from '../assets';
 
 const Hero = () => {
   return (
@@ -23,6 +24,13 @@ const Hero = () => {
             I develop web applications, Cloud <br className="sm:block hidden" />{' '}
             services and blockchain Web3.0
           </p>
+          <a
+            href={cv}
+            className="absolute bg-tertiary inline-block mt-8 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer z-30"
+            download
+          >
+            Download CV
+          </a>
         </div>
       </div>
 

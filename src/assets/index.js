@@ -38,6 +38,8 @@ import hien from './hien.jpg';
 import long from './long.jpg';
 import quang from './quang.jpg';
 
+import cv from './cv/cv.pdf';
+
 export {
   zuong,
   logo,
@@ -73,4 +75,5 @@ export {
   hien,
   long,
   quang,
+  cv,
 };
