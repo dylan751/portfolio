@@ -24,13 +24,15 @@ import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
 
 import meta from './company/meta.png';
-import shopify from './company/shopify.png';
-import starbucks from './company/starbucks.png';
-import tesla from './company/tesla.png';
+import nearhub from './company/nearhub.png';
+import jobufea from './company/jobufea.png';
+import btcs from './company/btcs.png';
 
-import carrent from './carrent.png';
+import bookingapp from './bookingapp.png';
 import jobit from './jobit.png';
-import tripguide from './tripguide.png';
+import callcenter from './callcenter.png';
+import travelpage from './travelpage.png';
+import nftmarketplace from './nftmarketplace.png';
 
 export {
   zuong,
@@ -56,10 +58,12 @@ export {
   typescript,
   threejs,
   meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
+  nearhub,
+  jobufea,
+  btcs,
+  bookingapp,
   jobit,
-  tripguide,
+  callcenter,
+  travelpage,
+  nftmarketplace,
 };
