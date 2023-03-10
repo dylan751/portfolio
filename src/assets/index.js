@@ -1,4 +1,4 @@
-import zuong from './zuong.jpg';
+import zuong from './zuong.png';
 
 import logo from './logo.svg';
 import backend from './backend.png';

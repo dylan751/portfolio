@@ -48,7 +48,7 @@ const About = () => {
 
       <motion.div
         variants={fadeIn('', '', 0.1, 1)}
-        className="flex md:flex-row flex-col gap-10 mt-14 text-secondary"
+        className="flex lg:flex-row flex-col gap-10 mt-14 text-secondary"
       >
         <div className="flex flex-col gap-2 h-full">
           {basicInfo.slice(0, 4).map((info, index) => (
@@ -66,7 +66,7 @@ const About = () => {
             </p>
           ))}
         </div>
-        <div className="flex flex-col gap-2 md:w-1/3 w-full h-full">
+        <div className="flex flex-col gap-2 lg:w-1/3 w-full h-full">
           {skillProgressBar.map((skill, index) => (
             <div className="flex flex-col gap-2 my-2" key={index}>
               <div className="flex justify-between">
