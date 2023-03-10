@@ -32,7 +32,7 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start justify-between`}
       >
         {!isMobile &&
           <div className="flex flex-col justify-center items-center mt-5">
@@ -46,7 +46,7 @@ const Hero = () => {
               Hi, I'm <span className="text-[#915eff]">Zuong</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop web applications, Cloud services and <br className="sm:block hidden" /> Blockchain Web3.0
+              I develop web applications, <br className="sm:block hidden" /> Cloud services and Blockchain Web3.0
             </p>
             <a
               href={cv}
@@ -60,7 +60,7 @@ const Hero = () => {
           <ComputersCanvas />
         </div>
 
-        {!isMobile && <img src={zuong} alt="zuong" className="w-5/6 h-5/6 object-contain inline" />}
+        {!isMobile && <img src={zuong} alt="zuong" className="h-5/6 w-auto object-contain inline rounded-tl-3xl rounded-br-3xl" />}
       </div>
 
 
