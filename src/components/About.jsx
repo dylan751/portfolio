@@ -75,7 +75,8 @@ const About = () => {
               </div>
               <div className="h-[10px] bg-white-100 rounded-md">
                 <div
-                  className={`h-full w-[${skill.percentage}%] bg-secondary rounded-md`}
+                  className={`h-full bg-secondary rounded-md`}
+                  style={{ width: `${skill.percentage}%` }}
                 >
                   <span></span>
                 </div>

@@ -59,10 +59,10 @@ export const basicInfo = [
 ];
 
 export const skillProgressBar = [
-  { name: 'React', percentage: '75' },
-  { name: 'Next', percentage: '75' },
-  { name: 'Database', percentage: '60' },
-  { name: 'Linux', percentage: '50' },
+  { name: 'Frontend', percentage: '80' },
+  { name: 'Backend', percentage: '70' },
+  { name: 'Deployment', percentage: '65' },
+  { name: 'Blockchain', percentage: '65' },
 ];
 
 const services = [
