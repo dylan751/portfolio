@@ -34,6 +34,7 @@ import jobit from './jobit.png';
 import callcenter from './callcenter.png';
 import travelpage from './travelpage.png';
 import nftmarketplace from './nftmarketplace.png';
+import portfolio from './portfolio.png';
 
 import hien from './hien.jpg';
 import long from './long.jpg';
@@ -74,6 +75,7 @@ export {
   callcenter,
   travelpage,
   nftmarketplace,
+  portfolio,
   hien,
   long,
   quang,

@@ -22,6 +22,7 @@ import {
   callcenter,
   travelpage,
   nftmarketplace,
+  portfolio,
   threejs,
   hien,
   long,
@@ -337,6 +338,30 @@ const projects = [
     live_link: 'https://testnet.nearhub.io/',
     source_code_enable: true,
     live_enable: false,
+  },
+  {
+    name: 'Personal Portfolio',
+    description:
+      'My Portfolio Website built with Vite and Three.js. It is where I show my background, skills, interests and share my projects to everyone',
+    tags: [
+      {
+        name: 'vite',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'threejs',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: portfolio,
+    source_code_link: 'https://github.com/muoi07052001/portfolio',
+    live_link: 'https://portfolio-seven-ashen-81.vercel.app/',
+    source_code_enable: true,
+    live_enable: true,
   },
 ];
 
