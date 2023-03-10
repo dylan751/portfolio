@@ -2,7 +2,7 @@ import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { services } from '../constants';
+import { services, basicInfo, skillProgressBar } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
@@ -32,7 +32,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About Me.</h2>
       </motion.div>
 
       <motion.p
@@ -45,6 +45,45 @@ const About = () => {
         always eager to improve my skills to build efficient, scalable, and
         user-friendly websites that solve real-world problems!
       </motion.p>
+
+      <motion.div
+        variants={fadeIn('', '', 0.1, 1)}
+        className="flex md:flex-row flex-col gap-10 mt-14 text-secondary"
+      >
+        <div className="flex flex-col gap-2 h-full">
+          {basicInfo.slice(0, 4).map((info, index) => (
+            <p className="border-b border-secondary py-2 w-full" key={index}>
+              <span className="font-medium text-white">{info.name}:</span>{' '}
+              {info.value}
+            </p>
+          ))}
+        </div>
+        <div className="flex flex-col gap-2 h-full">
+          {basicInfo.slice(4, 8).map((info, index) => (
+            <p className="border-b border-secondary py-2 w-full" key={index}>
+              <span className="font-medium text-white">{info.name}:</span>{' '}
+              {info.value}
+            </p>
+          ))}
+        </div>
+        <div className="flex flex-col gap-2 md:w-1/3 w-full h-full">
+          {skillProgressBar.map((skill, index) => (
+            <div className="flex flex-col gap-2 my-2" key={index}>
+              <div className="flex justify-between">
+                <span className="font-medium text-white">{skill.name}</span>
+                <span className="text-white">{skill.percentage}%</span>
+              </div>
+              <div className="h-[10px] bg-white-100 rounded-md">
+                <div
+                  className={`h-full w-[${skill.percentage}%] bg-secondary rounded-md`}
+                >
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

@@ -47,6 +47,24 @@ export const navLinks = [
   },
 ];
 
+export const basicInfo = [
+  { name: 'Birthday', value: '7 May 2001' },
+  { name: 'Website', value: 'https://www.linkedin.com/in/zuongnh/' },
+  { name: 'Degree', value: 'University' },
+  { name: 'City', value: 'Hanoi' },
+  { name: 'Age', value: '22' },
+  { name: 'Email', value: 'muoi07052001@gmail.com' },
+  { name: 'Phone', value: '+84 339410781' },
+  { name: 'Freelance', value: 'Available' },
+];
+
+export const skillProgressBar = [
+  { name: 'React', percentage: '75' },
+  { name: 'Next', percentage: '75' },
+  { name: 'Database', percentage: '60' },
+  { name: 'Linux', percentage: '50' },
+];
+
 const services = [
   {
     title: 'Web Developer',
