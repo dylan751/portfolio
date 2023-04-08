@@ -42,7 +42,7 @@ const Hero = () => {
 
         <div className="flex flex-col h-5/6">
           <div>
-            <h1 className="font-black text-white lg:text-[60px] sm:text-[40px] xs:text-[30px] text-[20px] lg:leading-[98px] mt-2 text-white">
+            <h1 className="font-black text-white lg:text-[60px] sm:text-[40px] xs:text-[30px] text-[20px] lg:leading-[98px] mt-2">
               Hi, I'm <span className="text-[#915eff]">Zuong</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
