@@ -19,6 +19,7 @@ import {
   btcs,
   mfi,
   bookingapp,
+  admina,
   jobit,
   callcenter,
   travelpage,
@@ -256,6 +257,30 @@ const projects = [
     live_link: 'https://booking-app-front-end.vercel.app/',
     source_code_enable: true,
     live_enable: true,
+  },
+  {
+    name: 'Admina',
+    description:
+      'Web-based platform to manage all your SaaS in one place. Remove the complexity from IT Management tasks and free your team to do the amazing things they are meant to do.',
+    tags: [
+      {
+        name: 'vuejs',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mysql',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nestjs',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: admina,
+    source_code_link: '',
+    live_link: '',
+    source_code_enable: false,
+    live_enable: false,
   },
   {
     name: 'Japanese Job IT',

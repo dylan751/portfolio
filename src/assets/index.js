@@ -31,6 +31,7 @@ import btcs from './company/btcs.png';
 import mfi from './company/mfi.png';
 
 import bookingapp from './bookingapp.png';
+import admina from './admina.png';
 import jobit from './jobit.png';
 import callcenter from './callcenter.png';
 import travelpage from './travelpage.png';
@@ -73,6 +74,7 @@ export {
   jobufea,
   btcs,
   bookingapp,
+  admina,
   jobit,
   callcenter,
   travelpage,
