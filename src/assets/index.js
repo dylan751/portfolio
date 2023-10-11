@@ -28,6 +28,7 @@ import meta from './company/meta.png';
 import nearhub from './company/nearhub.png';
 import jobufea from './company/jobufea.png';
 import btcs from './company/btcs.png';
+import mfi from './company/mfi.png';
 
 import bookingapp from './bookingapp.png';
 import jobit from './jobit.png';
@@ -68,6 +69,7 @@ export {
   threejs,
   meta,
   nearhub,
+  mfi,
   jobufea,
   btcs,
   bookingapp,

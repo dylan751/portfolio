@@ -17,6 +17,7 @@ import {
   jobufea,
   nearhub,
   btcs,
+  mfi,
   bookingapp,
   jobit,
   callcenter,
@@ -60,8 +61,8 @@ export const basicInfo = [
 ];
 
 export const skillProgressBar = [
-  { name: 'Frontend', percentage: '80' },
-  { name: 'Backend', percentage: '70' },
+  { name: 'Frontend', percentage: '70' },
+  { name: 'Backend', percentage: '80' },
   { name: 'Deployment', percentage: '65' },
   { name: 'Blockchain', percentage: '65' },
 ];
@@ -186,6 +187,19 @@ const experiences = [
       'Developing Smart Contract for the NFT Marketplace using NEAR - Rust SDK',
       'Bulding projects on Near Protocol Blockchain',
       'Participating in designing feature specifications for the NFT game',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+    ],
+  },
+  {
+    title: 'Fullstack Web Developer',
+    company_name: 'Money Forward i',
+    icon: mfi,
+    iconBg: '#E6DEDD',
+    date: 'April 2023 - Now',
+    points: [
+      'Developing Frontend and Backend of Admina (Saas management platform) web applications',
+      'Using Vue.js, Nest.js and other related technologies',
+      'Participating in developing features for the contract (Slack, Email) reminder',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
     ],
   },
